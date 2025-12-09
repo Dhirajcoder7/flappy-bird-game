@@ -2,12 +2,10 @@
 <html lang="en">
 
 <head>
-    
     <meta charset="UTF-8" />
-    
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-     <title>Flappy Bird</title>
-     <style>
+    <title>Flappy Bird</title>
+    <style>
         * {
             margin: 0;
             padding: 0;
@@ -154,17 +152,17 @@
 </head>
 
 <body>
-     <div class="background"></div>
-     <img src="https://ik.imagekit.io/hu4l1l0ib/WhatsApp%20Image%202025-12-08%20at%2018.47.49_387b52de.jpg?updatedAt=1765276323627" alt="bird-img" class="bird" id="bird-1">
+    <div class="background"></div>
+    <img src="https://ik.imagekit.io/hu4l1l0ib/WhatsApp%20Image%202025-12-08%20at%2018.47.49_387b52de.jpg?updatedAt=1765276323627" alt="bird-img" class="bird" id="bird-1">
     <div class="message">
-     Enter To Start Game <p><span style="color: red;">&uarr;</span> ArrowUp to Control</p>
-         </div>
+        Enter To Start Game <p><span style="color: red;">&uarr;</span> ArrowUp to Control</p>
+    </div>
     <div class="score">
-         <span class="score_title"></span>
+        <span class="score_title"></span>
         <span class="score_val"></span>
-        </div>
+    </div>
 
-    
+
     <script>
         let move_speed = 3, grativy = 0.5;
         let bird = document.querySelector('.bird');
@@ -274,10 +272,11 @@
                 if (game_state != 'Play') return;
                 bird_dy += grativy;
 
-                // --- Keyboard Jump Logic (Untouched) ---
+                // --- Keyboard Jump Logic (FIXED IMAGE URL) ---
                 document.addEventListener('keydown', (e) => {
                     if (e.key == 'ArrowUp' || e.key == ' ') {
-                        img.src = 'https://ik.imagekit.io/gxsuplhpp/Gemini_Generated_Image_ykod2iykod2iykod%20(1).png?updatedAt=1765257786019';
+                        // FIX: Updated to the correct Second Image URL
+                        img.src = 'https://ik.imagekit.io/hu4l1l0ib/WhatsApp%20Image%202025-12-09%20at%2010.47.17_27552bda.jpg?updatedAt=1765276323211';
                         bird_dy = -7.6;
                     }
                 });
@@ -342,9 +341,3 @@
 </body>
 
 </html>
-
-
-
-
-
-
